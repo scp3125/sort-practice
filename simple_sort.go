@@ -42,3 +42,23 @@ func InsertionSort(list []int) {
 		}
 	}
 }
+
+// 归并排序
+func MergeSort(list []int) {
+	mid := len(list) / 2
+
+	MergeSort(list[:mid])
+	MergeSort(list[mid+1:])
+	merge(list[:mid], list[mid+1:])
+}
+
+func merge(list1 []int, list2 []int) {
+	idx1 := 0
+	idx2 := 0
+
+	n1 := len(list1)
+	n2 := len(list2)
+	for idx1 < n1 || idx2 < n2 {
+
+	}
+}
